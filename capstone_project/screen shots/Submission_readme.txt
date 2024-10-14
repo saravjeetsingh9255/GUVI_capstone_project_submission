@@ -12,3 +12,5 @@ application url:- http://54.242.116.74:80
 docker image names:-  
   dev: saravjeet9255/dev:latest
   prod: saravjeet9255/prod:latest
+
+for jenkins i have updated the file and also added the builded in last screen shot to buil all in one stage so please check both screenshots for not get confusion 
