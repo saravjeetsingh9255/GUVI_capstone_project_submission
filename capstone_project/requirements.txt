@@ -1,4 +1,4 @@
-give the step by step procedure to deploy the given react application to a production ready state
+Deploy the given react application to a production ready state
 
 Application:
 clone the below mentioned repo and deploy the application.(run the application in port 80 [HTTP]) repo url: https://github.com/sriram-R-krishnan/devops-builds
