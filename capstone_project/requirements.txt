@@ -1,0 +1,42 @@
+give the step by step procedure to deploy the given react application to a production ready state
+
+Application:
+clone the below mentioned repo and deploy the application.(run the application in port 80 [HTTP]) repo url: https://github.com/sriram-R-krishnan/devops-builds
+
+docker:
+dockerize the application by creating a dockerfile
+create a docker-compose file to use the above image
+
+bash scripting:
+write 2 scripts
+build.sh - for building docker images
+deploy.sh - for deploying the image to server
+
+version control:
+push the code to github to dev branch (use docker ignore and gitignore files)
+note: use only CLI for related git commands
+
+jenkins:
+install and configure jenkings build step as per needs to build, push and deploy the application
+connect jenkins to the github repo with auto trigger both dev and master branch
+if code pushed to dev branch, docker image must build and pushed to dev repo in docker hub
+if dev merged to master, then docker image must be pushed to prod repo in docker hub
+
+AWS
+Lauch t2.micro instance and deploy the create application.
+configure Security groups as  below:
+- whoever has the ip address can access the application
+- login to server can should be made only from your ip address
+
+monitoring:
+setup a monitoring system to check the health status of the application. (open source)
+sending notification only if the application goes down is highly appreciable
+
+Submission:
+github repo url, deployed site url, docker images name must be added in the submission 
+upload the screenshots of below mentioned to github repo:
+- jenkins (login page, configuration settings, execute step commands)
+- AWS (ec2-console, security groups configs)
+- docker hub repo with image tags
+- deployed site page
+- monitoring health checks status
